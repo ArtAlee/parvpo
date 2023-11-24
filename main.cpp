@@ -61,7 +61,7 @@ int main() {
     auto end = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> duration = end - start;
     std::cout << "Total Execution Time: " << duration.count() << " seconds." << std::endl;
-
+	std::cout << "Arr size is " << size << '\n';
 
     return 0;
 }
