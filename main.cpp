@@ -5,7 +5,7 @@
 #include <cstdlib>
 #include <ctime>
 #include <chrono>
-
+//fdlkmslmfkslkmf
 std::vector<int> generateVec(int size) {
     std::vector<int> v(size);
     for (int i = 0; i < size; ++i) {
@@ -33,7 +33,7 @@ void sortVec(std::vector<int>& v) {
 
 int main() {
     const int vectorSize = 6;
-    int size = 100000;
+    int size = 120000;
     // Create 6 vectors and generate random numbers for each
     auto start = std::chrono::high_resolution_clock::now();
 
@@ -57,7 +57,7 @@ int main() {
     t4.join();
     t5.join();
     t6.join();
-    
+
     auto end = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> duration = end - start;
     std::cout << "Total Execution Time: " << duration.count() << " seconds." << std::endl;
